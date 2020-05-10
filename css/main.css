@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+}
 .body{
     border:2px solid black;
     padding:2px;
@@ -6,3 +11,12 @@
     border:1px solid red;
     margin:2px 0px 0px 0px;
 }
+.header{
+    height:100vh;
+    background-image: url('../images/dp.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
