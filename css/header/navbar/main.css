@@ -1,10 +1,15 @@
+.navbar{
+    position: absolute;
+    top:0px;
+    left:0px;
+}
 .input_checkbox {
     width:50px;
     height:50px;
     position:fixed;
     top:4px;
-    left:4px;
-    z-index:1;
+    left:96vw;
+    z-index:2;
     opacity: 0;
 }
 

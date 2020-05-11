@@ -4,10 +4,11 @@
     /* border: 2px solid red; */
     position:absolute;
     top:4px;
-    left:4px;
+    left:96vw;
     display: flex;
     justify-content: center;
     align-items:center;
+    z-index:1;
 }
 
 .hamburger > div{
