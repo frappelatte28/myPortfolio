@@ -7,9 +7,33 @@
     <link rel="stylesheet" href="css/header/navbar/menu.css">
     <link rel="stylesheet" href="css/header/navbar/hamburger.css">
     <link rel="stylesheet" href="css/header/navbar/main.css">
-    <link rel="stylesheet" href="css/header/mystyle.css">
+    <link rel="stylesheet" href="css/loader/loader.css">
+
+    <style>
+        .LOADER{
+            position: absolute;
+            height: 100vh;
+            width:100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+  
 </head>
 <body>
+    <div class="LOADER"> 
+        <svg class="heart-loader" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 90 90" version="1.1">
+            <g class="heart-loader__group">
+              <path class="heart-loader__square" stroke-width="1" fill="none" d="M0,30 0,90 60,90 60,30z"/>
+              <path class="heart-loader__circle m--left" stroke-width="1" fill="none" d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
+              <path class="heart-loader__circle m--right" stroke-width="1" fill="none" d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
+              <path class="heart-loader__heartPath" stroke-width="2" d="M60,30 a30,30 0 0,1 0,60 L0,90 0,30 a30,30 0 0,1 60,0" />
+            </g>
+          </svg>
+
+    </div>
+<div id = "main"> 
     <div class = "header">
         <div class="content_inner">
             <h1>Hi ! , I am <span>PRAGYA</span> </h1>
@@ -28,8 +52,6 @@
                     <li> home  </li>
                     <li> skills  </li>
                     <li> projects</li> 
-                    
-        
                 </ul>
 
             </div>
@@ -41,5 +63,30 @@
         <div class = "projects">yuuck!</div>
     </div>
     <div class = "footer">this is footer</div>
+</div>
+
+
+    <script>
+
+        var header = document.querySelector('.header')
+        var inner = document.querySelector('.content_inner')
+        var h1 = document.querySelector('.content_inner > h1')
+        var body = document.querySelector('body')
+        var loader = document.querySelector('.LOADER')
+        var main = document.querySelector('#main')
+        main.style.opacity= 0
+
+
+        window.addEventListener('load', callback2)
+
+  
+        function callback2(){
+             window.setTimeout(callback1, 7000);
+        }  
+        function callback1(){
+            main.style.opacity = 1 ;
+            loader.style.display = "none"
+        }
+    </script>
 </body>
 </html>
