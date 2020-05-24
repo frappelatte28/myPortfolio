@@ -27,6 +27,8 @@
     background-attachment: fixed;
     padding:2px;
     background-position: center;
+    animation: scale .9s ease-out;
+    animation-fill-mode: forwards;
 }.header p{
     font-size:50px;
 }
@@ -115,5 +117,17 @@
     from{
         left:0;
         width: 100%;
+    }
+}
+
+
+@keyframes scale{
+    from{
+        opacity: 0.8;
+        background-size:120%
+    }
+    to{
+        opacity: 1;
+        background-size:100%
     }
 }
