@@ -22,10 +22,11 @@
 .header{
     height:100vh;
     background-image: url('../images/dp.JPG') ;
-    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding:2px;
+    background-size: cover;
+
     background-position: center;
     animation: scale .9s ease-out;
     animation-fill-mode: forwards;
@@ -124,10 +125,9 @@
 @keyframes scale{
     from{
         opacity: 0.8;
-        background-size:120%
     }
     to{
         opacity: 1;
-        background-size:100%
+
     }
 }
