@@ -18,7 +18,11 @@
             justify-content: center;
             align-items: center;
         }
+        #testImage{
+            display:none;
+        }
     </style>
+    <img id ="testImage" src = "./images/dp.JPG"/>
   
 </head>
 <body>
@@ -65,28 +69,7 @@
     <div class = "footer">this is footer</div>
 </div>
 
+<script type = "text/javascript" src = "js/loader.js" ></script>
 
-    <script>
-
-        var header = document.querySelector('.header')
-        var inner = document.querySelector('.content_inner')
-        var h1 = document.querySelector('.content_inner > h1')
-        var body = document.querySelector('body')
-        var loader = document.querySelector('.LOADER')
-        var main = document.querySelector('#main')
-        main.style.opacity= 0
-
-
-        window.addEventListener('load', callback2)
-
-  
-        function callback2(){
-             window.setTimeout(callback1, 7000);
-        }  
-        function callback1(){
-            main.style.opacity = 1 ;
-            loader.style.display = "none"
-        }
-    </script>
 </body>
 </html>
