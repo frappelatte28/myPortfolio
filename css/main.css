@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+::-webkit-scrollbar {
+    width: .2em;
+    height: 1em
+}
+​
 
 *{
     box-sizing: border-box;
     margin: 0px;
     padding:0px;
 }
+
 .body{
     border:2px solid black;
-    padding:2px;
+    padding:20px;
 }
 .body > div {
     border:1px solid red;
@@ -20,6 +26,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding:2px;
+    background-position: center;
 }.header p{
     font-size:50px;
 }
