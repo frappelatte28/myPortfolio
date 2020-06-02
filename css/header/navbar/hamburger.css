@@ -41,7 +41,7 @@
     top:10px;
     background-color:purple;
     transform-origin: 0;
-    transition: transform 1s cubic-bezier(.02,1.01,.95,.54);
+    transition: transform 1s cubic-bezier(.61,.86,.59,.37)
     border-radius: 40px;
     
 }
