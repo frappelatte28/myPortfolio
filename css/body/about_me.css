@@ -1,0 +1,73 @@
+.about_me{
+    width:100%;
+    height:100vh;
+    padding:3px;
+    background-color: burlywood;
+
+
+    display: flex;
+
+    
+    
+    
+}
+
+
+.about_me_image{
+    height: 100%;
+    width:50%;
+    padding:3px;
+    box-sizing: border-box; 
+
+}
+
+
+.about_me_image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about_me_text{
+    height: 100%;
+    width:50%;
+
+    display:flex;
+    flex-direction: column;
+ 
+}
+.about_me_text div:nth-child(1){
+background-color: azure;
+
+    flex-grow:1; 
+    padding-left: 2rem; 
+    padding-top: 2rem; 
+    font-size: 1.9rem;
+}
+
+
+
+.about_me_text div:nth-child(2){
+    flex-grow:3;
+    word-wrap: break-word;
+    text-align:justify;
+    padding-left:1rem;
+    padding-right:1rem;
+    padding-top:2rem;
+    font-size: 1.7rem;
+
+}
+
+
+@media only screen and (max-width: 600px){
+    .about_me{
+        flex-direction: column;
+        
+    }
+    .about_me_text{
+        width:100%;
+    }
+    .about_me_image{
+        width:100%;
+    }
+}
