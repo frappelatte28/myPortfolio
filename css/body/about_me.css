@@ -37,7 +37,7 @@
 }
 .about_me_text div:nth-child(1){
 background-color: azure;
-
+font-family: 'Lobster', cursive;
     flex-grow:1; 
     padding-left: 2rem; 
     padding-top: 2rem; 
