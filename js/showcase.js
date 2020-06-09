@@ -1,9 +1,9 @@
 
-    let root = document.documentElement
-    let height = window.innerHeight
-    let width = window.innerWidth
+    const  root = document.documentElement
+    var height = window.innerHeight
+    var width = window.innerWidth
 
-    ratio =  width / height
+    var ratio =  width / height
 
     
 
@@ -11,6 +11,31 @@
     window.addEventListener('resize', handleResize)
 
     function handleResize(){
-        window.location.reload()
+        window.location.reload() 
     }
+
+
+    
+
+    const leftButton = document.querySelector('.showcase_nav_buttons > .left')
+    const rightButton = document.querySelector('.showcase_nav_buttons > .right')
+
+    const showCase = document.querySelector('.showcase')
+
+    leftButton.addEventListener("click" , handleLeftButtonClick)
+    rightButton.addEventListener("click" , handleRightButtonClick)
+
+    var currenPos = 0 
+    function handleLeftButtonClick(){
+
+        currenPos-=90
       
+        showCase.style.transform = `rotateY(${currenPos}deg)` ;
+
+    }
+    function handleRightButtonClick(){
+        currenPos+=90
+       
+        showCase.style.transform = `rotateY(${currenPos}deg)` ;
+        
+    }
