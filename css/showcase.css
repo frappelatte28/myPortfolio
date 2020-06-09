@@ -1,0 +1,82 @@
+:root{
+    --width: 90vw;
+    --height:90vh;
+}
+.showcase_body{
+    /* border: 2px solid black; */
+    height:100vh;
+}
+.scene{
+    margin:50px auto;
+    width: var(--width);
+    height: var(--height);
+    perspective: 500vw;
+}
+.showcase div{
+    position: absolute;
+    height: var(--height);
+    width:var(--width);
+}
+.showcase{
+    height: 100%;
+    transform-style: preserve-3d;
+    animation-name: CubeAnimation;
+    animation-duration: 12s;
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+.showcase div:nth-child(1){
+    background-color: cadetblue;
+    transform: translateZ( calc(var(--width)/ 2 ) );
+    background-image: url();
+}
+.showcase div:nth-child(2){
+    background-color: rgb(226, 104, 161);
+    transform:rotateY(180deg) translateZ( calc(var(--width)/ 2 ) )
+}
+.showcase div:nth-child(3){
+    background-color: rgb(129, 72, 177);
+    transform:rotateY(90deg) translateZ(calc(var(--width) / 2 ) );
+}
+.showcase div:nth-child(4){
+    background-color: rgb(148, 44, 44);
+    transform:rotateY(-90deg) translateZ(calc(var(--width) / 2 ) );
+}
+.showcase div:nth-child(5){
+    background-color: rgb(99, 116, 24);
+    transform: rotateX(90deg) translateZ(calc( var(--height) / 2)) scaleY( var(--ratio))   ;
+}
+.showcase div:nth-child(6){
+    background-color: rgb(180, 207, 216);
+    transform: rotateX(-90deg) translateZ(calc( var(--height) / 2)) scaleY( var(--ratio)) ;
+}
+
+@keyframes CubeAnimation {
+    0%{
+        transform: rotate(0);
+    }
+    15%{
+        transform: translateZ(-100px) rotateY(-90deg) ;
+    }
+
+    30%{
+        transform: translateZ(-100px) rotateY(180deg);
+    }
+    45%{
+        transform:translateZ(-100px) rotateY(-90deg);
+    }
+
+    60%{
+        transform: translateZ(-100px)rotateX(-90deg);
+    }
+    90%{
+        transform: translateZ(-100px)rotateX(90deg);
+    }   
+}
+.turnleft{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
