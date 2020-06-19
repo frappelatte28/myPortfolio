@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+ /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 ::-webkit-scrollbar {
     width: .2em;
     height: 1em
-}
+} */
 ​
 
 *{
@@ -12,31 +12,29 @@
 }
 
 
-.header{
+ .header{
     height:100vh;
     background-image: url('../images/main.JPG') ;
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding:2px;
     background-size: cover;
-
     background-position: center;
     animation: scale .9s ease-out;
     animation-fill-mode: forwards;
-}.header p{
+} 
+ /* .header {
     font-size:50px;
-}
-.header h1{
-    font-size:70px;
-}
+} */
 .content_inner{    
     margin-top:45vh;
     padding:5px;
 }
-.content_inner{
+/* .content_inner{
+    text-color:aliceblue;
     animation: testAnimation 2s ease-in;
-    font-family: 'Roboto', sans-serif;
-    text-shadow: 2px 2px 4px #000;
+     font-family: 'Roboto', sans-serif; 
+    text-shadow: 2px 2px 4px rgb(89, 128, 161);
 
 }
 .content_inner>:nth-child(1) > span{
@@ -49,8 +47,8 @@
     width:100%;
     position: absolute; 
     left:0px;
-    background-color: rgb(144, 161, 238);
-    z-index: -1;
+    background-color: rgb(128, 149, 243);
+    z-index: -1; 
     animation: width 2s ease-out forwards;
 }
 .content_inner>:nth-child(1) > span:after{
@@ -126,4 +124,23 @@
         opacity: 1;
 
     }
-}
+}  */  
+.ml16 {
+    color: aliceblue;
+    padding: 25px 0;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    overflow: hidden;
+  }
+  
+  .ml16 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  @media (min-width: 320px) and (max-width: 480px){
+      .ml16{
+          font-size: 22px;
+      }
+  }

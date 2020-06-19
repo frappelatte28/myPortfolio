@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="css/header/navbar/menu.css">
     <link rel="stylesheet" href="css/header/navbar/hamburger.css">
     <link rel="stylesheet" href="css/header/navbar/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/body/about_me.css">
     <link rel="stylesheet" href="css/loader/new_loader.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="css/showcase.css">
     <link rel="stylesheet" href="css/footer.css">
+    
     <style>
            .loader{
             position: absolute;
@@ -35,13 +37,14 @@
         <div id = "main"> 
             <div class = "header">
                 <div class="content_inner">
-                    <h1>Hi ! , I am <span>PRAGYA</span> </h1>
+                    <!-- <p>Hi ! , I am <span>PRAGYA</span> </p>
                     <p>
                     For now just saying i love what i do.
-                    </p>
+                    </p> -->
+                    <h1 class="ml16">Hey, i am <span>Pragya!</span></h1>
                 </div>
                 <div class = "navbar">
-                    <input class ="input_checkbox"type = "checkbox">
+                    <input class ="input_checkbox"type = "checkbox" >
                     
                     <div class="hamburger"> 
                         <div></div>
@@ -57,12 +60,12 @@
                 </div>
             </div>
             <div class = "body"> 
-                <div class="about_me">
+                <div class="about_me" >
                     <div class="about_me_image">
                         <!-- <div> kdsajflje</div> -->
-                        <img src="images/aboutMe.jpg"/>
+                        <img src="images/aboutMe.jpg" data-aos="fade-right"/>
                     </div>
-                    <div class="about_me_text">
+                    <div class="about_me_text" data-aos="fade-left">
                         <div class="about_me_text_heading">
                             <H1>ABOUT ME </H1>
                         </div>
@@ -76,12 +79,12 @@
                     
                         <div class="scene">
                             <div class="showcase">
-                                <div class="front"> </div>
+                                <div class="front"></div>
                                 <div class="back"></div>
                                 <div class="right"></div>
                                 <div class="left"></div>
-                                <div class="top"></div>
-                                <div class="bottom"></div>
+                                <!-- <div class="top"></div>
+                                <div class="bottom"></div> -->
                             </div>
                         </div>
 
@@ -119,8 +122,17 @@
             </div>
         </div>  
             
-
+         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 
         <script type=  "text/javascript" src=  "js/showcase.js"></script>
         <script type = "text/javascript" src = "js/loader.js" ></script> 
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> 
+        <script type="text/javascript" src="js/header.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset:400,
+                duration:1000
+            });
+        </script>
     </body>
 </html>

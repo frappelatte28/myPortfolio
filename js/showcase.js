@@ -11,7 +11,7 @@
     window.addEventListener('resize', handleResize)
 
     function handleResize(){
-        window.location.reload() 
+        // window.location.reload() 
     }
 
 

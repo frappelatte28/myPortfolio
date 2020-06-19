@@ -9,15 +9,16 @@
 
  aboutMeImage.addEventListener('load',handleAboutMeOnLoad)
  testImage.addEventListener('load', handleTestImageOnLoad) 
- main.style.display ="none"
+//  main.style.display ="none"
+
+loader.style.display = "none"
 
 var setIntervalId = setInterval(handler, 1)
 
   
  function handler(){
     if(imageLoaded == 2){
-        loader.style.display = "none"
-        main.style.display = "block"
+        // main.style.display = "block"
          clearInterval(setIntervalId)
     }
    

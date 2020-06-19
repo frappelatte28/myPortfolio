@@ -26,28 +26,39 @@
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 2s ease-in;
-    /* animation-name: CubeAnimation;
-    animation-duration: 12s;
-    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
-    animation-iteration-count: infinite; */
 }
 
 .showcase div:nth-child(1){
     background-color: cadetblue;
     transform: translateZ( calc(var(--width)/ 2 ) );
-    background-image: url();
+    background-image: url(../images/1.JPG);
+    background-position: center;
+    background-size: contain;
+    width:100%;
+   
+
 }
 .showcase div:nth-child(2){
     background-color: rgb(226, 104, 161);
-    transform:rotateY(180deg) translateZ( calc(var(--width)/ 2 ) )
+    transform:rotateY(180deg) translateZ( calc(var(--width)/ 2 ) );
+    background-image: url(../images/2.JPG);
+    background-position: center;
+    background-size: 400px; 
+    width:100%;
 }
 .showcase div:nth-child(3){
     background-color: rgb(129, 72, 177);
     transform:rotateY(90deg) translateZ(calc(var(--width) / 2 ) );
+    background-image: url(../images/3.JPG);
+    background-position: center;
+    background-size: 563px;
 }
 .showcase div:nth-child(4){
     background-color: rgb(148, 44, 44);
     transform:rotateY(-90deg) translateZ(calc(var(--width) / 2 ) );
+    background-image: url(../images/5.JPG);
+    background-position: center;
+    background-size: 1240px;
 }
 .showcase div:nth-child(5){
     background-color: rgb(99, 116, 24);
@@ -142,28 +153,3 @@
     animation-timing-function:linear;
 }
 
-
-
-
-@keyframes CubeAnimation {
-    0%{
-        transform: rotate(0);
-    }
-    15%{
-        transform: translateZ(-100px) rotateY(-90deg) ;
-    }
-
-    30%{
-        transform: translateZ(-100px) rotateY(180deg);
-    }
-    45%{
-        transform:translateZ(-100px) rotateY(-90deg);
-    }
-
-    60%{
-        transform: translateZ(-100px)rotateX(-90deg);
-    }
-    90%{
-        transform: translateZ(-100px)rotateX(90deg);
-    }   
-}
