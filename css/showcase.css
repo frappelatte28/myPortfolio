@@ -58,7 +58,7 @@
     transform:rotateY(-90deg) translateZ(calc(var(--width) / 2 ) );
     background-image: url(../images/5.JPG);
     background-position: center;
-    background-size: 1240px;
+    background-size: 1225px;
 }
 .showcase div:nth-child(5){
     background-color: rgb(99, 116, 24);

@@ -2,6 +2,7 @@
     width:100%;
     height:100vh;
     /* background-color: rgb(186, 229, 229); */
+    overflow-x: hidden;
     display: flex;
 }
 
